@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --scrollbar-thumb-color: rgb(164, 160, 160); /* Thumb color */
+  --scrollbar-track-color: rgb(164, 160, 160); /* Track color */
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-color);
+}
+
+/* Scrollbar track (the non-draggable part) */
+::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-track-color);
+  border-radius: 10%;
+}
+
+/* Hide scrollbar thumb when not scrolling */
+::-webkit-scrollbar-thumb:vertical:hover {
+  background-color: gray;
+}
